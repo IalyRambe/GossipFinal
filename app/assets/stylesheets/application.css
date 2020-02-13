@@ -1,0 +1,53 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+h1{
+  font-size: 50px;
+  color: black;
+  margin-left: 25px;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+h2{
+  font-size: 40px;
+  color: blue;
+  margin-left: 40px;
+  font-style: italic;
+
+}
+
+p{
+  font-size: 20px;
+  margin-left: 25px;
+}
+
+button{
+  margin-left: 5%;
+}
+
+.jumbotron-fluid {
+  /* Choisis la hauteur ici */
+  height: 300px;
+
+  /* Tu lui donnes une image de background */
+  background-image: url("gossip.jpg");
+
+  /* Centre l'image et la met bien sur tous les écrans */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

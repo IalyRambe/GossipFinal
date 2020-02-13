@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Bienvenue sur la page de <%= gossip.user.first_name %> </h1>
+    <h2>Voici les potins que j'ai déjà publié !</h2>
+    <% Gossip.user.each do |gossip| %>
+      <p>
+      <%= gossip.user.first_name %><br/>
+      <%= gossip.title %>
+      </p>
+    <% end %>
+
+  </body>
+  </html>

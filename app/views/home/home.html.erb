@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Chez THP, ça bosse! On a un seul potin pour le moment !</h1>
+
+    <h2>Lance ton potin</h2>
+    <p>
+    <a href="<%= new_gossip_path %>" class="btn btn-secondary">Je balance</a></br>
+  </p>
+  </br><h2>Voici tous les potins en base !</h2>
+
+  <% Gossip.all.each do |gossip| %>
+       <p>
+       <%= gossip.user.first_name %><br/>
+       <%= gossip.title %>
+       </p>
+     <% end %>
+
+
+  </body>
+  </html>
